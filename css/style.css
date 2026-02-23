@@ -29,9 +29,10 @@
     opacity: 1;
 }
 main{
-    display: flex;
-    flex-direction: column;
+    display: block;
+    position: relative;
     width: 100%;
+    height: auto;
 }
 
 section{
@@ -133,6 +134,7 @@ section{
     gap: 50px;
     font-size: 24px;
     padding: 50px;
+    will-change: contents;
 }
 .slide_img{
     display: block;
@@ -187,10 +189,33 @@ section{
     width: 100%;
     position: absolute;
     left: 0;
-    top: 30%;
+    top: 40%;
 }
 
+.creators .slide {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 300px;
+    /* Скрываем все слайды по умолчанию (GSAP включит первый) */
+}
+.creators .slide p{
+    font-weight: 900;
+}
+.creators .slide article{
+    padding: 0 50px;
+}
 .creators .slide_img{
     width: 440px;
-    rotate: -10deg;
+    rotate: -15deg;
+}
+
+.creators .slide_img .img_border{
+    top: -30%;
+}
+.creators .slider_next {
+    width: 12.2%;
+    top: 50%;
+    right: 30%;
+    position: absolute;
+    /* Добавьте свои стили для кнопки */
 }
