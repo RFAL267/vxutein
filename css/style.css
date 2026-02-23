@@ -128,8 +128,8 @@ section{
 .slide article{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
+    justify-content: flex-start;
     gap: 50px;
     font-size: 24px;
     padding: 50px;
@@ -138,7 +138,6 @@ section{
     display: block;
     width: 660px;
     height: auto;
-
     position: relative;
     rotate: 10deg;
 }
@@ -181,4 +180,17 @@ section{
     display: block;
     width: 100%;
     height: auto;
+}
+
+.creators .content{
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 30%;
+}
+
+.creators .slide_img{
+    width: 440px;
+    rotate: -10deg;
 }
