@@ -1,0 +1,53 @@
+
+.header{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(#0006,#18171660);
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid #000;
+}
+.header .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.header .menu a{
+    font-size: 24px;
+    padding: 20px;
+    opacity: 0.7;
+    text-shadow: 0 0 50px #fff;
+    transition: all 0.3s ease;
+}
+.header .menu a:hover{
+    text-shadow: 0 0 10px #fff;
+    opacity: 1;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.hero{
+    display: block;
+    width: 100%;
+}
+
+.hero_bg{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.hero_title{
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 11.875%;
+    width: 42.9%;
+    height: auto;
+}

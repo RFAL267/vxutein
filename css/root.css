@@ -1,0 +1,61 @@
+:root{
+    --font: "Jura", sans-serif, system-ui;
+    --dark: #000;
+    --white: #fff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--dark);
+    font-family: var(--font);
+    color: var(--white);
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+a,button,p,span{
+    font-size: 1rem;
+}
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+h1,h2,h3{
+    font-weight: 700;
+    
+}
+h1{
+    font-size: 28px;
+}
+h2{
+    font-size: 24px;
+}
+h3{
+    font-size: 20px;
+}
+
+button{
+    background: transparent;
+    border: none;
+    font-weight: 500;
+}
+a,button{
+    cursor: pointer;
+}
+input{
+    font-size: 1rem;
+    background: var(--gray20);
+    border: 1px solid var(--gray50);
+    color: var(--gray120);
+    padding: 12px;
+    outline: none;
+    border-radius: 8px;
+}
+img{
+    user-select: none;
+}
