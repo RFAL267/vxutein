@@ -175,3 +175,10 @@ section{
 .slider_next:hover{
     transform: rotate(20deg) scale(0.9);
 }
+
+
+.creators .bg{
+    display: block;
+    width: 100%;
+    height: auto;
+}
