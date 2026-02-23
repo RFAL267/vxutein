@@ -121,6 +121,7 @@ section{
     top: 0;
     left: 0;
     width: 100%;
+    min-height: 500px;
     height: auto;
     /* Скрываем все слайды по умолчанию (GSAP включит первый) */
     opacity: 0; 
