@@ -138,12 +138,15 @@ section{
     display: block;
     width: 660px;
     height: auto;
+
     position: relative;
     rotate: 10deg;
 }
 .slide_img .img{
     width: 100%;
     position: relative;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 .slide_img .img_border{
     width: 135%;
