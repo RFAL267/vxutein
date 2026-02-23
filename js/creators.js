@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function resetAutoPlay() {
         clearInterval(autoPlayTimer);
         // Увеличил интервал до 7 секунд, чтобы успевал пропечататься и прочитаться текст
-        autoPlayTimer = setInterval(goToNextSlide, 7000); 
+        autoPlayTimer = setInterval(goToNextSlide, 8000); 
     }
 
     if (nextBtn) {
