@@ -230,3 +230,55 @@ section{
     top: 8%;
     left: 17%;
 }
+.creating1 .wrap{
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    position: absolute;
+    height: auto;
+    top: 0;
+    left: 0;
+    padding-top: 400px;
+}
+.creating1 .steps{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 17%;
+    margin-bottom: 200px;
+}
+.creating1 .steps span{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* Изолируем стили только для секции creating1 */
+.creating1 .creating1-slider {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    /* Убираем стандартные флексы swiper, если они мешают */
+    display: block; 
+}
+
+.creating1 .swiper-wrapper {
+    display: flex;
+    width: max-content; /* Критично: контейнер должен быть во всю длину слайдов */
+    flex-wrap: nowrap;
+}
+
+.creating1 .swiper-slide {
+    width: auto; /* Слайды подстраиваются под контент */
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    max-height: 353px;
+}
+
+.creating1 .swiper-slide img {
+    display: block;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    pointer-events: none; /* Чтобы картинки не "хватались" мышкой */
+}
