@@ -230,7 +230,7 @@ section{
     top: 8%;
     left: 17%;
 }
-.creating1 .wrap{
+.creating .wrap{
     flex-direction: column;
     position: relative;
     width: 100%;
@@ -240,20 +240,24 @@ section{
     left: 0;
     padding-top: 400px;
 }
-.creating1 .steps{
+.creating .steps{
     display: flex;
     flex-direction: column;
     gap: 50px;
     margin-left: 17%;
     margin-bottom: 200px;
 }
-.creating1 .steps span{
+.creating .steps span{
     font-size: 24px;
     font-weight: 400;
 }
 
 /* Изолируем стили только для секции creating1 */
-.creating1 .creating1-slider {
+
+.creating .slider-main{
+    position: relative;
+}
+.creating .creating1-slider {
     overflow: hidden;
     width: 100%;
     position: relative;
@@ -261,21 +265,35 @@ section{
     display: block; 
 }
 
-.creating1 .swiper-wrapper {
+.creating .swiper-wrapper {
     display: flex;
     width: max-content; /* Критично: контейнер должен быть во всю длину слайдов */
     flex-wrap: nowrap;
 }
-
-.creating1 .swiper-slide {
+.creating .frame_left,
+.creating .frame_right{
+    display: block;
+    position: absolute;
+    z-index: 99;
+}
+.creating .frame_left{
+    left: 0;
+    top: -30px;
+}
+.creating .frame_right{
+    bottom: -30px;
+    right: 0;
+}
+.creating .swiper-slide {
     width: auto; /* Слайды подстраиваются под контент */
     flex-shrink: 0;
     display: flex;
     align-items: center;
     max-height: 353px;
+    z-index: 10;
 }
 
-.creating1 .swiper-slide img {
+.creating .swiper-slide img {
     display: block;
     width: auto;
     height: auto;
