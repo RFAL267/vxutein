@@ -212,6 +212,7 @@ section{
 
 .creators .slide_img .img_border{
     top: -30%;
+    height: 125%;
 }
 .creators .slider_next {
     width: 12.2%;
@@ -243,6 +244,17 @@ section{
 }
 .creating2 .wrap{
     padding-top: 300px;
+}
+.creating_header{
+    display: grid;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+    grid-template-columns: 1fr 1fr;
+}
+.creating_header .step_article{
+    display: block;
+    font-size: 24px;
 }
 .creating .steps{
     display: flex;
@@ -305,6 +317,48 @@ section{
     pointer-events: none; /* Чтобы картинки не "хватались" мышкой */
 }
 
+
+/* Убираем стандартные стили кнопок браузера */
+.steps .step-btn {
+    cursor: pointer;
+    background: none;
+    font-size: 24px;
+    border: none;
+    color: inherit;
+    padding: 0;
+    text-align: left;
+    outline: none;
+    opacity: 0.5;
+}
+.steps .step-btn.active{
+    opacity: 1;
+}
+/* Накладываем тексты и слайдеры друг на друга */
+.articles-wrapper, 
+.sliders-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    position: relative;
+}
+
+/* Все элементы находятся в одной и той же ячейке сетки */
+.step_article, 
+.slider-main {
+    grid-area: 1 / 1;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none; /* Чтобы некликабельные элементы не перекрывали кнопки внутри слайдера */
+}
+
+/* Базовые стили для активных элементов (хотя GSAP тоже будет этим управлять) */
+.step_article.active, 
+.slider-main.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
 /* IN LIFE */
 
 .inlife .title{
@@ -359,6 +413,13 @@ section{
     position: absolute;
     left: 15%;
     top: 5%;
+}
+
+#model3d-canvas{
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    aspect-ratio: 16/9;
 }
 .model3d .wrap,
 .video .wrap{

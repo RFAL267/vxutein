@@ -8,7 +8,7 @@ scene.background = null;
 
 // камера
 const camera = new THREE.PerspectiveCamera(
-  75,
+100,
   canvas.clientWidth / canvas.clientHeight,
   0.1,
   1000
@@ -21,10 +21,10 @@ renderer.setSize(canvas.clientWidth, canvas.clientHeight);
 renderer.setPixelRatio(window.devicePixelRatio);
 
 // свет
-scene.add(new THREE.AmbientLight(0xffffff, 0.6));
+scene.add(new THREE.AmbientLight(0xffffff, 1));
 
-const dirLight = new THREE.DirectionalLight(0xffffff, 1.5);
-dirLight.position.set(5,50,5);
+const dirLight = new THREE.DirectionalLight(0xffffff, 5);
+dirLight.position.set(20,50,10);
 scene.add(dirLight);
 
 // controls
@@ -47,13 +47,6 @@ loader.load("3d/model.glb", (gltf) => {
 }, undefined, (error) => {
     console.error("Ошибка загрузки модели:", error);
 });
-
-// тестовый куб (можно удалить)
-const cube = new THREE.Mesh(
-  new THREE.BoxGeometry(),
-  new THREE.MeshStandardMaterial({ color: 0x00ff88, wireframe: true })
-);
-scene.add(cube);
 
 // анимация
 function animate() {
