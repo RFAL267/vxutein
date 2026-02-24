@@ -352,3 +352,16 @@ section{
 .inlife .grid .center span{
     font-size: 24px;
 }
+
+/* 3d */
+
+.model3d .wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
