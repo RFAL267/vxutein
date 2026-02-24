@@ -355,6 +355,12 @@ section{
 
 /* 3d */
 
+.model3d .title{
+    display: block;
+    position: absolute;
+    left: 15%;
+    top: 5%;
+}
 .model3d .wrap,
 .video .wrap{
     display: flex;
