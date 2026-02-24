@@ -240,6 +240,9 @@ section{
     left: 0;
     padding-top: 400px;
 }
+.creating2 .wrap{
+    padding-top: 300px;
+}
 .creating .steps{
     display: flex;
     flex-direction: column;
@@ -300,3 +303,4 @@ section{
     object-fit: cover;
     pointer-events: none; /* Чтобы картинки не "хватались" мышкой */
 }
+
