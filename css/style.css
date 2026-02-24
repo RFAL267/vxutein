@@ -220,3 +220,13 @@ section{
     position: absolute;
     /* Добавьте свои стили для кнопки */
 }
+
+
+/* CREATING */
+
+.creating1 .title{
+    display: block;
+    position: absolute;
+    top: 8%;
+    left: 17%;
+}
