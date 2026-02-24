@@ -31,7 +31,7 @@
         <!-- HISTORY -->
         <section class="history">
             <img src="img/s2bg.webp" alt="hero_bg" class="section_bg history_bg">
-            <img src="img/history_title.webp" alt="history_title" class="history_title">
+            <img src="img/history_title.webp" alt="history_title" class="scroll-fade-up history_title">
             <div class="content">
                 <div class="slider">
                     <div class="slides-container">
@@ -138,13 +138,13 @@
         <section class="creating creating1">
             <img src="img/creating1/bg.webp" alt="creators_bg" class="bg section_bg">
             <div class="wrap">
-                <img src="img/creating1/title.webp" alt="creating_title" class="title">
+                <img src="img/creating1/title.webp" alt="creating_title" class="title scroll-fade-up">
                 
                 <div class="steps">
-                    <span>
+                    <span class="scroll-fade-up">
                         1. Идея и мелодия
                     </span>
-                    <span>
+                    <span class="scroll-fade-up">
                         2. Дизайн и материалы
                     </span>
                 </div>
@@ -203,10 +203,10 @@
             <img src="img/creating2/bg.webp" alt="creators_bg" class="bg section_bg">
             <div class="wrap">
                 <div class="steps">
-                    <span>
+                    <span class="scroll-fade-up">
                         3. Создание механизма и корпуса
                     </span>
-                    <span>
+                    <span class="scroll-fade-up">
                         4. Сборка и финальная настройка
                     </span>
                 </div>
@@ -265,23 +265,23 @@
 
         <section class="inlife">
             <img src="img/inlife/bg.webp" alt="creators_bg" class="bg section_bg">
-            <img src="img/inlife/title.webp" alt="inlife_title" class="title">
+            <img src="img/inlife/title.webp" alt="inlife_title" class="title scroll-fade-up">
             <div class="wrap">
                 <div class="container">
                     <div class="grid">
                         <div class="col">
-                            <img src="img/inlife/i1.png">
-                            <img src="img/inlife/i2.png">
+                            <img src="img/inlife/i1.png" class="scroll-fade-up">
+                            <img src="img/inlife/i2.png" class="scroll-fade-up">
                         </div>
                         <div class="center">
-                            <span>Подарок — знак любви и заботы</span>
-                            <span>Детство — колыбельные и спокойствие</span>
-                            <span>Память — воспоминания о близких</span>
-                            <span>Эмоции — музыка без слов</span>
+                            <span class="scroll-fade-up">Подарок — знак любви и заботы</span>
+                            <span class="scroll-fade-up">Детство — колыбельные и спокойствие</span>
+                            <span class="scroll-fade-up">Память — воспоминания о близких</span>
+                            <span class="scroll-fade-up">Эмоции — музыка без слов</span>
                         </div>
                         <div class="col">
-                            <img src="img/inlife/i3.png">
-                            <img src="img/inlife/i4.png">
+                            <img src="img/inlife/i3.png" class="scroll-fade-up">
+                            <img src="img/inlife/i4.png" class="scroll-fade-up">
                         </div>
                     </div>
                 </div>
@@ -293,7 +293,7 @@
 
         <section class="model3d">
             <img src="img/3d/bg.webp" alt="creators_bg" class="bg section_bg">
-            <img src="img/3d/title.webp" alt="3d_title" class="title">
+            <img src="img/3d/title.webp" alt="3d_title" class="title scroll-fade-up">
             <div class="wrap">
                 <canvas id="model3d-canvas" width="800" height="600"></canvas>
             </div>
@@ -317,18 +317,22 @@
             </div>
         </footer>
     </main>
-    <script src="plugins/gsap.min.js"></script>
+    <script src="plugins/gsap/gsap.min.js"></script>
+    <script src="plugins/gsap/ScrollTrigger.min.js"></script>
     <script src="plugins/swiper-bundle.min.js"></script>
     <!-- three -->
      <script src="plugins/three/three.min.js"></script>
      <script src="plugins/three/GLTFLoader.js"></script>
      <script src="plugins/three/OrbitControls.js"></script>
 <!-- - -->
+    <script src="js/hero.js"></script>
     <script src="js/history.js"></script>
     <script src="js/creators.js"></script>
     <script src="js/creating1.js"></script>
     <script src="js/creating2.js"></script>
     <script src="js/3d.js"></script>
+    <!-- - -->
+     <script src="js/scroll.js"></script>
 </body>
 </html>
 
