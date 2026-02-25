@@ -21,9 +21,13 @@
     </header>
     <main>
         <!-- - -->
-         <button class="music_btn">
-            
-         </button>
+        <button class="music_btn" id="musicBtn">
+            <img src="img/svg/music.svg" alt="music_btn">
+            <audio id="bgMusic" loop>
+                <source src="music/music.mp3" type="audio/mpeg">
+                Ваш браузер не поддерживает аудио.
+            </audio>
+        </button>
         <!-- HERO -->
         <section class="hero">
             <img src="img/hero_bg.webp" alt="hero_bg" class="section_bg hero_bg">
@@ -319,6 +323,9 @@
     <script src="plugins/gsap/gsap.min.js"></script>
     <script src="plugins/gsap/ScrollTrigger.min.js"></script>
     <script src="plugins/swiper-bundle.min.js"></script>
+
+    <!-- music -->
+    <script src="js/music.js"></script>
     <!-- three -->
      <script src="plugins/three/three.min.js"></script>
      <script src="plugins/three/GLTFLoader.js"></script>
