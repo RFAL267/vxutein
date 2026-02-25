@@ -22,10 +22,11 @@
     padding: 20px;
     opacity: 0.7;
     text-shadow: 0 0 50px #fff;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 .header .menu a:hover{
-    text-shadow: 0 0 10px #fff;
+    text-shadow: 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff;
+    transform: translateY(5px);
     opacity: 1;
 }
 main{
