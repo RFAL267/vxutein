@@ -518,5 +518,5 @@ section{
     display: block;
     width: 100%;
     height: 50%;
-    background: linear-gradient(#fff1,#DECBB9);
+    background: linear-gradient(transparent,#DECBB9);
 }
