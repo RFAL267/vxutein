@@ -9,13 +9,13 @@
     margin: 0;
     box-sizing: border-box;
     font-family: var(--font);
+    scroll-behavior: smooth!important;
 }
 
 body{
     background: var(--dark);
     color: var(--white);
     font-size: 16px;
-    scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-y: auto;
     width: 100%!important;
