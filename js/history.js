@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let autoPlayTimer;
   let typingTimer;
 
-  // 🔥 сохраняем оригинальный HTML
+  // сохраняем оригинальный HTML
   slides.forEach(slide => {
     const article = slide.querySelector("article");
     if (article) {

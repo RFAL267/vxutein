@@ -459,8 +459,23 @@ section{
     margin: 0 auto;
     padding: 20px;
 }
-
-
+.footer .social{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.footer .social a{
+    display: block;
+    opacity: 0.7;
+}
+.footer .social a img{
+    max-height: 35px;
+}
+.footer .social a:hover{
+    opacity: 1;
+}
 .music_btn{
     display: flex;
     align-items: center;
@@ -474,7 +489,7 @@ section{
     border-radius: 50%;
     margin: 20px;
     transform: scale(1);
-    transition: all 0.3s ease;
+    transition: all 1s ease;
     animation: music 10s infinite linear;
 }
 @keyframes music {
@@ -494,6 +509,7 @@ section{
     top: -6px;
     border-radius: 50%;
     border: 2px solid #DECBB9;
+    transition: all 1s ease;
 }
 .music_btn.active{
     transform: scale(0.7)!important;
