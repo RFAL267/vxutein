@@ -1,3 +1,4 @@
+//history.js
 document.addEventListener("DOMContentLoaded", () => {
   const historySection = document.querySelector(".history");
   if (!historySection) return;
